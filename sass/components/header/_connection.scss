@@ -1,0 +1,95 @@
+.connection {
+@media screen and(max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.connection__item:not(:last-child) {
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 30px;
+  }
+}
+
+.connection__link {
+  @extend %link;
+  color: $primary-text-color;
+  transition: color $transition-value;
+
+  &:hover,
+  &:focus {
+    @extend %link-action;
+  }
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and(min-width:480px) and(max-width:1199px) {
+    font-size: 12px;
+  }
+
+  &--envelope{
+   @media screen and(max-width: 767px) {
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 32px;
+  }
+}
+&--phone{
+  @media screen and(max-width: 767px) {
+    font-size: 34px;
+    color: $primary-accent-color;
+  }
+}
+}
+
+.connection__icon {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  @media screen and(min-width:768px) {
+    margin-right: 8px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-right: 10px;
+  }
+  fill: currentColor;
+}
+
+
+
+.icon-envelope {
+  @media screen and(min-width:768px) {
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.icon-phone {
+  @media screen and(min-width:768px) {
+    width: 10px;
+    height: 14px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}

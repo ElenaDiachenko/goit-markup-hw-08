@@ -1,0 +1,10 @@
+@mixin box($d: flex, $fw: wrap, $ml: $margin-collapse, $mr: $margin-collapse) {
+  display: $d;
+  flex-wrap: $fw;
+  margin-left: $ml;
+  margin-top: $mr;
+}
+@mixin boxItem($ml: $margin, $mr: $margin) {
+  margin-left: $ml;
+  margin-top: $mr;
+}

@@ -1,0 +1,62 @@
+.clients {
+  @extend %list;
+  @media screen and (min-width: 480px) {
+    @include box();
+  }
+}
+.clients__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 - 30px);
+    @include boxItem();
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+.client__link {
+  @extend %centeredFlex;
+  padding: 15px 51px;
+
+  @media screen and (min-width: 768px) {
+    padding: 15px 59px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 15px 31px;
+  }
+
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  color: $icon-color;
+
+  transition: border $transition-value, color $transition-value;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $primary-accent-color;
+    color: $primary-accent-color;
+  }
+}
+
+.client__icon {
+  max-width: 106px;
+  max-height: 60px;
+  fill: currentColor;
+  transition: fill $transition-value;
+
+  .client__link:hover &,
+  .client__link:focus & {
+    fill: currentColor;
+  }
+}
