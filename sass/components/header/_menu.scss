@@ -6,20 +6,17 @@
   margin-left: auto;
   display: none;
 
- 
-
-   @media screen and (max-width: 767px) {
-   display: block;
+  @media screen and (max-width: 767px) {
+    display: block;
     &.is-open {
-     position: fixed;
-     top: 10px;
+      position: fixed;
+      top: 10px;
       right: 15px;
       z-index: 6;
     }
-    }
+  }
 }
 .burger {
-  
   width: 40px;
   height: 40px;
   transition: fill $transition-value;
@@ -44,11 +41,10 @@
 .site-nav {
   display: flex;
   align-items: center;
- 
 
   @media screen and (max-width: 767px) {
     min-height: 60px;
-     overflow-y: scroll;
+    overflow-y: scroll;
   }
 
   @media screen and (min-width: 768px) {
@@ -57,7 +53,7 @@
 }
 
 .site-nav__menu {
- line-height: 1.17;
+  line-height: 1.17;
   font-weight: 500;
   background-color: $secondary-accent-color;
 
