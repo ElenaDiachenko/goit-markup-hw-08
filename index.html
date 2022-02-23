@@ -16,70 +16,61 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <nav class="site-nav">
-          <a href="./index.html" lang="en" class="logo header__logo"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <button
-            type="button"
-            class="header__btn btn"
-            aria-expanded="false"
-            aria-controls="site-nav__menu"
-            data-menu-button
-          >
-            <svg class="burger" aria-label="Переключатель мобильного меню">
-              <use class="btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
-              <use class="btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-
-          <div class="site-nav__menu" id="site-nav__menu" data-menu>
-            
-            <ul class="header__nav nav">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link link nav__link--active">Студия</a>
-              </li>
-              <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-            </ul>
-            <ul class="header__connection connection">
-              <li class="connection__item">
-                <a href="mailto:info@devstudio.com" class="connection__link connection__link--envelope">
-                  <svg class="connection__icon icon-envelope">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="connection__item ">
-                <a href="tel:+380961111111" class="connection__link connection__link--phone">
-                  <svg class="connection__icon icon-phone">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-            <ul class="header-social">
-              <li class="header-social__item">
-                <a href="" class="header-social__link">Instagram</a>
-              </li>
-              <li class="header-social__item">
-                <a href="" class="header-social__link">Twitter</a>
-              </li>
-              <li class="header-social__item">
-                <a href="" class="header-social__link">Facebook</a>
-              </li>
-              <li class="header-social__item">
-                <a href="" class="header-social__link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="site-nav">
+        <a href="./index.html" lang="en" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+        <button type="button" class="header__btn btn" aria-expanded="false" aria-controls="site-nav__menu"
+          data-menu-button>
+          <svg class="burger" aria-label="Переключатель мобильного меню">
+            <use class="btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+            <use class="btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+  
+        <div class="site-nav__menu" id="site-nav__menu" data-menu>
+  
+          <ul class="header__nav nav">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link nav__link--active">Студия</a>
+            </li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+          </ul>
+          <ul class="header__connection connection">
+            <li class="connection__item">
+              <a href="mailto:info@devstudio.com" class="connection__link connection__link--envelope">
+                <svg class="connection__icon icon-envelope">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="connection__item ">
+              <a href="tel:+380961111111" class="connection__link connection__link--phone">
+                <svg class="connection__icon icon-phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="header-social">
+            <li class="header-social__item">
+              <a href="" class="header-social__link">Instagram</a>
+            </li>
+            <li class="header-social__item">
+              <a href="" class="header-social__link">Twitter</a>
+            </li>
+            <li class="header-social__item">
+              <a href="" class="header-social__link">Facebook</a>
+            </li>
+            <li class="header-social__item">
+              <a href="" class="header-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -142,39 +133,44 @@
           <ul class="activities box">
             <li class="activities__item box__item">
               <div class="activities__thumb">
-                 <picture>
-                  <source srcset="
-                  ./images/studio/work-1-dextop-370.jpg 370w, 
-                  ./images/studio/work-1-dextop-740.jpg 740w "                             
-                  type="image/jpeg"/>
-                  <img  srcset="./images/studio/work-1-dextop-370.jpg"
-                  alt="Рабочий стол програмиста"
-                  sizes="(min-width: 1200px) 30vw" >
-                 </picture>
+                <picture>
+                <source 
+                srcset="
+                ./images/studio/work-1-dextop-370.jpg 1x, 
+                ./images/studio/work-1-dextop-740.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <img src="./images/studio/work-1-dextop-370.jpg" alt="Декстопное приложение"/> 
+              </picture>
                 <p class="activities__description">декстопные приложения</p>
               </div>
             </li>
             <li class="activities__item box__item">
               <div class="activities__thumb">
-                <picture>
-                  <source srcset="
-                     ./images/studio/work-2-dextop-370.jpg 370w, 
-                      ./images/studio/work-2-dextop-740.jpg 740w " type="image/jpeg" />
-                  <img srcset="./images/studio/work-1-dextop-370.jpg" alt="Планшет веб-дизайнера" sizes="(min-width: 1200px) 30vw">
-                </picture>
+                 <picture>
+                <source 
+                srcset="
+                ./images/studio/work-2-dextop-370.jpg 1x, 
+                ./images/studio/work-2-dextop-740.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <img src="./images/studio/work-2-dextop-370.jpg" alt="Мобильное приложение"/> 
+              </picture>
                 <p class="activities__description">мобильные приложения</p>
               </div>
             </li>
             <li class="activities__item box__item">
               <div class="activities__thumb">
                 <picture>
-                  <source srcset="
-                    ./images/studio/work-3-dextop-370.jpg 370w, 
-                     ./images/studio/work-3-dextop-740.jpg 740w " type="image/jpeg" />
-
-                  <img srcset="./images/studio/work-1-dextop-370.jpg" alt="Планшет веб-дизайнера" sizes="(min-width: 1200px) 30wv">
-                </picture>
-
+                <source 
+                srcset="
+                ./images/studio/work-3-dextop-370.jpg 1x, 
+                ./images/studio/work-3-dextop-740.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <img src="./images/studio/work-3-dextop-370.jpg" alt="Планшет веб-дизайнера"/> 
+                 
+              </picture>
                 <p class="activities__description">дизайнерские решения</p>
               </div>
             </li>
@@ -187,17 +183,23 @@
           <ul class="team ">
             <li class="team__item ">
               <picture>
+                <source 
+                srcset="
+                ./images/studio/team-1-dextop-270.jpg 1x, 
+                ./images/studio/team-1-dextop-540.jpg 2x"
+                media="(min-width: 1200px)"
+                />
                 <source srcset="
-                                ./images/studio/team-1-dextop-270.jpg 270w, 
-                                ./images/studio/team-1-dextop-540.jpg 540w,
-                                ./images/studio/team-1-tablet-354.jpg 354w, 
-                                ./images/studio/team-1-tablet-708.jpg 708w, 
-                                ./images/studio/team-1-mobile-450.jpg 450w, 
-                                ./images/studio/team-1-mobile-900.jpg 900w, 
-                                " type="image/jpeg" />
-                   
-                <img srcset="./images/studio/team-1-dextop-270.jpg" alt="Фотография сотрудника" 
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                ../images/studio/team-1-tablet-354.jpg 1x, 
+                ./images/studio/team-1-tablet-708.jpg 2x"
+                media="(min-width: 768px)"/>
+               <source 
+                srcset="
+                ./images/studio/team-1-mobile-450.jpg 1x, 
+                ./images/studio/team-1-mobile-900.jpg 2x"
+                media="(min-width: 320px) "/>
+                <img src="./images/studio/team-1-dextop-270.jpg" alt="Фотография сотрудника"/> 
+                 
               </picture>
               <div class="team__content">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -237,16 +239,16 @@
             <li class="team__item ">
               <picture>
                 <source srcset="
-                              ./images/studio/team-2-dextop-270.jpg 270w, 
-                              ./images/studio/team-2-dextop-540.jpg 540w,
-                              ./images/studio/team-2-tablet-354.jpg 354w, 
-                              ./images/studio/team-2-tablet-708.jpg 708w, 
-                              ./images/studio/team-2-mobile-450.jpg 450w, 
-                              ./images/studio/team-2-mobile-900.jpg 900w, 
-                              " type="image/jpeg" />            
+                              ./images/studio/team-2-dextop-270.jpg 1x, 
+                              ./images/studio/team-2-dextop-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="
+                              ../images/studio/team-2-tablet-354.jpg 1x, 
+                              ./images/studio/team-2-tablet-708.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="
+                              ./images/studio/team-2-mobile-450.jpg 1x, 
+                              ./images/studio/team-2-mobile-900.jpg 2x" media="(min-width: 320px) " />
+                <img src="./images/studio/team-2-dextop-270.jpg" alt="Фотография сотрудника" />
               
-                <img srcset="./images/studio/team-2-dextop-270.jpg" alt="Фотография сотрудника"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
               </picture>
               <div class="team__content">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -286,18 +288,18 @@
             <li class="team__item ">
               <picture>
                 <source srcset="
-                                ./images/studio/team-3-dextop-270.jpg 270w, 
-                                 ./images/studio/team-3-dextop-540.jpg 540w,
-                                 ./images/studio/team-3-tablet-354.jpg 354w, 
-                                 ./images/studio/team-3-tablet-708.jpg 708w, 
-                                 ./images/studio/team-3-mobile-450.jpg 450w, 
-                                 ./images/studio/team-3-mobile-900.jpg 900w, 
-                                 " type="image/jpeg" />
+                              ./images/studio/team-3-dextop-270.jpg 1x, 
+                              ./images/studio/team-3-dextop-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="
+                              ../images/studio/team-3-tablet-354.jpg 1x, 
+                              ./images/studio/team-3-tablet-708.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="
+                              ./images/studio/team-3-mobile-450.jpg 1x, 
+                              ./images/studio/team-3-mobile-900.jpg 2x" media="(min-width: 320px) " />
+                <img src="./images/studio/team-3-dextop-270.jpg" alt="Фотография сотрудника" />
               
-                <img srcset="./images/studio/team-3-dextop-270.jpg" alt="Фотография сотрудника"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
               </picture>
-              <div class="team__content">
+                <div class="team__content">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__description">Marketing</p>
                 <ul class="social">
@@ -335,16 +337,16 @@
             <li class="team__item ">
               <picture>
                 <source srcset="
-                                ./images/studio/team-4-dextop-270.jpg 270w, 
-                                ./images/studio/team-4-dextop-540.jpg 540w,
-                                ./images/studio/team-4-tablet-354.jpg 354w, 
-                                ./images/studio/team-4-tablet-708.jpg 708w, 
-                                ./images/studio/team-4-mobile-450.jpg 450w, 
-                                ./images/studio/team-4-mobile-900.jpg 900w, 
-                                " type="image/jpeg" />
+                              ./images/studio/team-4-dextop-270.jpg 1x, 
+                              ./images/studio/team-4-dextop-540.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="
+                              ../images/studio/team-4-tablet-354.jpg 1x, 
+                              ./images/studio/team-4-tablet-708.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="
+                              ./images/studio/team-4-mobile-450.jpg 1x, 
+                              ./images/studio/team-4-mobile-900.jpg 2x" media="(min-width: 320px) " />
+                <img src="./images/studio/team-4-dextop-270.jpg" alt="Фотография сотрудника" />
               
-                <img srcset="./images/studio/team-4-dextop-270.jpg" alt="Фотография сотрудника"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
               </picture>
               <div class="team__content">
                 <h3 class="team__title">Михаил Ермаков</h3>

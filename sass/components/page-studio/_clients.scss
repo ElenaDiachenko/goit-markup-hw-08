@@ -1,17 +1,18 @@
 .clients {
   @extend %list;
-  @media screen and (min-width: 480px) {
+
+  @media screen and (min-width: 320px) {
     @include box();
   }
 }
+
 .clients__item {
   &:not(:last-child) {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 319px) {
       margin-bottom: 15px;
     }
   }
-
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     flex-basis: calc(100% / 2 - 30px);
     @include boxItem();
   }
@@ -26,7 +27,12 @@
 
 .client__link {
   @extend %centeredFlex;
-  padding: 15px 51px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    padding: 15px 51px;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 15px 59px;

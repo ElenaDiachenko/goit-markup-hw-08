@@ -1,8 +1,5 @@
 .modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1, 0.9);
+  position: relative;
   padding: 40px;
   background-color: $primary-background;
   border: 1px solid #ffffff;
@@ -11,6 +8,11 @@
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
   @media screen and (min-width: 480px) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%) scale(1, 0.9);
     max-width: 450px;
     min-height: 609px;
   }

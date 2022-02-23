@@ -51,6 +51,7 @@
 }
 .address__link {
   @extend %link;
+   transition: color $transition-value;
 
   &:hover,
   &:focus {

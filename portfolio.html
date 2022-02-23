@@ -13,61 +13,60 @@
 </head>
 
 <body> 
-        <header class="header">
-            <div class="container header__container">
-                <nav class="site-nav">
-                    <a href="./index.html" lang="en" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
-                    <button type="button" class="header__btn btn" aria-expanded="false" aria-controls="site-nav__menu"
-                        data-menu-button>
-                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                            <use class="btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
-                            <use class="btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
-                        </svg>
-                    </button>
-        
-                    <div class="site-nav__menu" id="site-nav__menu" data-menu>
-        
-                        <ul class="header__nav nav">
-                            <li class="nav__item">
-                                <a href="./index.html" class="nav__link link">Студия</a>
-                            </li>
-                            <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--active">Портфолио</a></li>
-                            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-                        </ul>
-                        <ul class="header__connection connection">
-                            <li class="connection__item">
-                                <a href="mailto:info@devstudio.com" class="connection__link connection__link--envelope">
-                                    <svg class="connection__icon icon-envelope">
-                                        <use href="./images/icons.svg#icon-envelope"></use>
-                                    </svg>
-                                    info@devstudio.com</a>
-                            </li>
-                            <li class="connection__item ">
-                                <a href="tel:+380961111111" class="connection__link connection__link--phone">
-                                    <svg class="connection__icon icon-phone">
-                                        <use href="./images/icons.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 096 111 11 11</a>
-                            </li>
-                        </ul>
-                        <ul class="header-social">
-                            <li class="header-social__item">
-                                <a href="" class="header-social__link">Instagram</a>
-                            </li>
-                            <li class="header-social__item">
-                                <a href="" class="header-social__link">Twitter</a>
-                            </li>
-                            <li class="header-social__item">
-                                <a href="" class="header-social__link">Facebook</a>
-                            </li>
-                            <li class="header-social__item">
-                                <a href="" class="header-social__link">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="site-nav">
+                <a href="./index.html" lang="en" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+                <button type="button" class="header__btn btn" aria-expanded="false" aria-controls="site-nav__menu"
+                    data-menu-button>
+                    <svg class="burger" aria-label="Переключатель мобильного меню">
+                        <use class="btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                        <use class="btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+    
+                <div class="site-nav__menu" id="site-nav__menu" data-menu>
+                    <ul class="header__nav nav">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link link ">Студия</a>
+                        </li>
+                        <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--active">Портфолио</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                    </ul>
+                    <ul class="header__connection connection">
+                        <li class="connection__item">
+                            <a href="mailto:info@devstudio.com" class="connection__link connection__link--envelope">
+                                <svg class="connection__icon icon-envelope">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="connection__item ">
+                            <a href="tel:+380961111111" class="connection__link connection__link--phone">
+                                <svg class="connection__icon icon-phone">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="header-social">
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">Instagram</a>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">Twitter</a>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">Facebook</a>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="section section__examples">
             <div class="container">
@@ -85,18 +84,19 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                     ./images/portfolio/product-1-dextop-370.jpg 370w, 
-                                                     ./images/portfolio/product-1-dextop-740.jpg 740w,
-                                                     ./images/portfolio/product-1-tablet-354.jpg 354w, 
-                                                     ./images/portfolio/product-1-tablet-708.jpg 708w, 
-                                                     ./images/portfolio/product-1-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-1-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                
-                                    <img srcset="./images/portfolio/product-1-dextop-370.jpg" alt="Страница веб-сайта"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-1-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-1-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/portfolio/product-1-tablet-354.jpg 1x, 
+                                        ./images/portfolio/product-1-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/portfolio/product-1-mobile-450.jpg 1x, 
+                                        ./images/portfolio/product-1-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-1-dextop-370.jpg" alt="Страница веб-сайта" />
                                 </picture>
-                                <!-- <img src="./images/project-1.jpg" alt="Страница веб-сайта" > -->
                                 <div class="card__overlay">
                                     <p class="card__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                         платформу для цифрового
@@ -115,17 +115,17 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                     ./images/portfolio/product-2-dextop-370.jpg 370w, 
-                                                     ./images/portfolio/product-2-dextop-740.jpg 740w,
-                                                     ./images/portfolio/product-2-tablet-354.jpg 354w, 
-                                                     ./images/portfolio/product-2-tablet-708.jpg 708w, 
-                                                     ./images/portfolio/product-2-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-2-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                
-                                    <img srcset="./images/portfolio/product-2-dextop-370.jpg" alt="Постер на баскетбольную тему"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
-                                </picture>
+                                                ./images/portfolio/product-2-dextop-370.jpg 1x,
+                                                ./images/portfolio/product-2-dextop-740.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                ./images/portfolio/product-2-tablet-354.jpg 1x, 
+                                                ./images/portfolio/product-2-tablet-708.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="
+                                                ./images/portfolio/product-2-mobile-450.jpg 1x, 
+                                                ./images/portfolio/product-2-mobile-900.jpg 2x" media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-2-dextop-370.jpg" alt="Постер на баскетбольную тему" />
+                                    </picture>
+
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam aut amet nulla
                                         dolorum? Tenetur facilis nobis fuga. Hic, minus.</p>
@@ -143,15 +143,18 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-3-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-3-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-3-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-3-tablet-708.jpg 708w, 
-                                                    ./images/portfolio/product-3-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-3-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                    <img srcset="./images/portfolio/product-3-dextop-370.jpg" alt="Постер на баскетбольную тему"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-3-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-3-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-3-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-3-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-3-mobile-450.jpg 1x, 
+                                            ./images/portfolio/product-3-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-3-dextop-370.jpg" alt="Логотип рыбного ресторана" />
                                 </picture>
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat soluta ullam tempore
@@ -168,19 +171,21 @@
                     <li class="card">
                         <a href="" class="card__link ">
                             <div class="card__thumb">
-                                <picture>
+                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-4-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-4-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-4-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-4-tablet-708.jpg 708w, 
-                                                    ./images/portfolio/product-4-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-4-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                    <img srcset="./images/portfolio/product-4-dextop-370.jpg" alt="Постер на баскетбольную тему"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-4-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-4-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-4-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-4-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-4-mobile-450.jpg 1x, 
+                                            ./images/portfolio/product-4-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-4-dextop-370.jpg" alt="Наушники" />
                                 </picture>
-                                <!-- <img src="./images/project-4.jpg" alt="Полноразмерные наушники" > -->
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium esse sunt eos recusandae
                                         deserunt distinctio, inventore reiciendis optio ipsum quibusdam.</p>
@@ -198,15 +203,18 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-5-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-5-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-5-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-5-tablet-708.jpg 708w, 
-                                                    ./images/portfolio/product-5-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-5-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                    <img srcset="./images/portfolio/product-5-dextop-370.jpg" alt="Коробки"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-5-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-5-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-5-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-5-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-5-mobile-450.jpg 1x, 
+                                            ./images/portfolio/product-5-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-5-dextop-370.jpg" alt="Коробки" />
                                 </picture>
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa magnam ipsum fugit error dolorem
@@ -219,19 +227,23 @@
                             </div>
                         </a>
                     </li>
-
                     <li class="card">
                         <a href="" class="card__link ">
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-6-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-6-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-6-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-6-tablet-708.jpg 708w, 
-                                                    " type="image/jpeg" />
-                                    <img srcset="./images/portfolio/product-6-dextop-370.jpg" alt="Страница сайта"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-6-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-6-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-6-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-6-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-6-mobile-450.jpg 1x, 
+                                            ./images/portfolio/product-6-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-6-dextop-370.jpg" alt="Страница сайта" />
                                 </picture>
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, libero tempore
@@ -250,15 +262,18 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-7-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-7-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-7-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-7-tablet-708.jpg 708w, 
-                                                    ./images/portfolio/product-7-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-7-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                <img srcset="./images/portfolio/product-7-dextop-370.jpg" alt="Разворот журнала"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-7-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-7-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-7-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-7-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-7-mobile-450.jpg 1x, 
+                                            /images/portfolio/product-7-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-7-dextop-370.jpg" alt="Разворот журнала" />
                                 </picture>
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius doloremque autem quas eum
@@ -277,15 +292,18 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-8-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-8-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-8-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-8-tablet-708.jpg 708w, 
-                                                    ./images/portfolio/product-8-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-8-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                <img srcset="./images/portfolio/product-8-dextop-370.jpg" alt="Макет ярлыка"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-8-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-8-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-8-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-8-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-8-mobile-450.jpg 1x, 
+                                            /images/portfolio/product-8-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-8-dextop-370.jpg" alt="Макет ярлыка" />
                                 </picture>
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque repudiandae est
@@ -304,15 +322,18 @@
                             <div class="card__thumb">
                                 <picture>
                                     <source srcset="
-                                                    ./images/portfolio/product-9-dextop-370.jpg 370w, 
-                                                    ./images/portfolio/product-9-dextop-740.jpg 740w,
-                                                    ./images/portfolio/product-9-tablet-354.jpg 354w, 
-                                                    ./images/portfolio/product-9-tablet-708.jpg 708w, 
-                                                    ./images/portfolio/product-9-mobile-450.jpg 450w, 
-                                                    ./images/portfolio/product-9-mobile-900.jpg 900w, 
-                                                    " type="image/jpeg" />
-                                   <img srcset="./images/portfolio/product-9-dextop-370.jpg" alt="Страница сайта"
-                                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                                        ./images/portfolio/product-9-dextop-370.jpg 1x,
+                                        ./images/portfolio/product-9-dextop-740.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="
+                                         ./images/portfolio/product-9-tablet-354.jpg 1x, 
+                                            ./images/portfolio/product-9-tablet-708.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="
+                                           ./images/portfolio/product-9-mobile-450.jpg 1x, 
+                                            ./images/portfolio/product-9-mobile-900.jpg 2x"
+                                        media="(min-width: 320px) " />
+                                    <img src="./images/portfolio/product-9-dextop-370.jpg" alt="Страница сайта" />
                                 </picture>
                                 <div class="card__overlay">
                                     <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolores quas, facilis eos iusto
